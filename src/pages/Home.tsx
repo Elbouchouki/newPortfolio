@@ -7,15 +7,17 @@ export const Home = () => {
   return (
     <Box
       sx={{
-        width: "100vw",
-        minHeight: "100vh",
+        width: "100%",
+        height: "100%",
+        minHeight: "500px",
       }}
     >
       <CardMedia
         sx={{
           objectFit: "cover",
           position: "absolute",
-          minHeight: "100vh",
+          height: "100vh",
+          minHeight: "600px",
           zIndex: -1,
           filter: "brightness(50%)",
         }}
@@ -26,7 +28,8 @@ export const Home = () => {
       <Box
         sx={{
           pt: 10,
-          height: "700px",
+          height: "100vh",
+          minHeight: "600px",
           width: "auto",
           display: "flex",
           flexDirection: "column",
@@ -42,7 +45,7 @@ export const Home = () => {
             width: "50%",
           }}
         >
-          <Logo width="auto" height="auto" />
+          <Logo />
         </Box>
         <Typography
           variant="h4"

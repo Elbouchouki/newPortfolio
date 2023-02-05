@@ -1,4 +1,4 @@
-import { createTheme } from "@mui/material";
+import { createTheme } from "@mui/material/styles";
 import "./theme.css";
 
 export const theme = createTheme({
@@ -15,4 +15,18 @@ export const theme = createTheme({
     fontWeightMedium: "500",
     fontWeightBold: "700",
   },
+  // components: {
+  //   MuiCssBaseline: {
+  //     styleOverrides: {
+  //       html: {
+  //         "& ::-webkit-scrollbar": {
+  //           width: "20px",
+  //         },
+  //         "& ::-webkit-scrollbar-track": {},
+  //         "& ::-webkit-scrollbar-thumb": {},
+  //         "& ::-webkit-scrollbar-thumb:hover": {},
+  //       },
+  //     },
+  //   },
+  // },
 });
