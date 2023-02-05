@@ -1,6 +1,5 @@
-import { Box, CardMedia, Container, Typography } from "@mui/material";
+import { Box, CardMedia, Typography } from "@mui/material";
 import { Logo } from "../componants/Logo";
-import "@fontsource/palanquin";
 import { INFORMATION } from "../constants/content";
 
 export const Home = () => {
