@@ -2,8 +2,8 @@ import { Box } from "@mui/material";
 import { TargetAndTransition, motion } from "framer-motion";
 
 interface Props {
-  width: string | number;
-  height: string | number;
+  width?: string | number;
+  height?: string | number;
 }
 
 const shadowAnimation: Record<string, TargetAndTransition> = {
@@ -147,12 +147,12 @@ const star7Animation: Record<string, TargetAndTransition> = {
   },
 };
 
-export function Logo({ width, height }: Props) {
+export function Logo({ width = "auto", height = "auto" }: Props) {
   return (
     <Box width={width} height={height} sx={{ m: 1 }}>
       <svg
-        width="auto"
-        height="auto"
+        width="100%"
+        height="100%"
         viewBox="0 0 1555 1631"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -162,31 +162,31 @@ export function Logo({ width, height }: Props) {
             id="Rectangle 53"
             d="M921 1447H969C977.284 1447 984 1453.72 984 1462V1496C984 1504.28 977.284 1511 969 1511H921V1447Z"
             fill="#9E5B54"
-            fill-opacity="0.34"
+            fillOpacity="0.34"
           />
           <path
             id="Rectangle 57"
             d="M317 1462C317 1453.72 323.716 1447 332 1447H430V1511H332C323.716 1511 317 1504.28 317 1496V1462Z"
             fill="#9E5B54"
-            fill-opacity="0.34"
+            fillOpacity="0.34"
           />
           <path
             id="Rectangle 54"
             d="M377 1511H430V1572H392C383.716 1572 377 1565.28 377 1557V1511Z"
             fill="#9E5B54"
-            fill-opacity="0.34"
+            fillOpacity="0.34"
           />
           <path
             id="Rectangle 55"
             d="M430 1405C430 1396.72 436.716 1390 445 1390H906C914.284 1390 921 1396.72 921 1405V1557C921 1565.28 914.284 1572 906 1572H430V1405Z"
             fill="#9E5B54"
-            fill-opacity="0.34"
+            fillOpacity="0.34"
           />
           <path
             id="Rectangle 56"
             d="M558 1572H680V1616C680 1624.28 673.284 1631 665 1631H573C564.716 1631 558 1624.28 558 1616V1572Z"
             fill="#9E5B54"
-            fill-opacity="0.34"
+            fillOpacity="0.34"
           />
         </motion.g>
         <motion.g variants={corpsAnimation} initial="before" animate="after">
